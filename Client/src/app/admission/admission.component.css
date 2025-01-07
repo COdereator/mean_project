@@ -1,0 +1,38 @@
+main{
+    height: 120vh;
+    width: 90%;
+    margin: auto;
+    background-color: #FFD2C4;
+    display: flex;
+    margin-top: 70px;
+}
+.left{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.left h1{
+    font-size: 3.3rem;
+    margin-left: 40px;
+}
+.left p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: 80%;
+    margin-left: 40px;
+    line-height: 27px;
+}
+.anchor{
+    width: 80%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+a{
+    color: #05244F;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

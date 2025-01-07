@@ -1,0 +1,106 @@
+<app-main-component></app-main-component>
+
+<div class="h1">
+    <h1>Why {{ school }}</h1>
+</div>
+
+<!-- <section>
+    <div class="box">
+        <div class="left">
+            <div class="content">
+                <h1>Our Approach</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+        <div class="right" style="background-color: #D43C2B;">
+            <div class="content">
+                <h1>Admission</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">Enroll Today</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="right image1">
+            <div class="content">
+                <h1>Enhance Learning</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">View Programs</a>
+            </div>
+        </div>
+        <div class="right" style="background-color: #A6180D;">
+            <div class="content">
+                <h1>Latest News & Events</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">View All</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://static.wixstatic.com/media/2feeec_191fcb6eb4fa4bcfa9c0ed351f0c7fbe~mv2.jpg/v1/fill/w_434,h_542,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2feeec_191fcb6eb4fa4bcfa9c0ed351f0c7fbe~mv2.jpg"
+                alt="" height="100%" width="100%">
+        </div>
+    </div>
+    <div class="box">
+        <div class="right" style="background-color: #7D221A;">
+            <div class="content">
+                <h1>For the Parents</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">Get Informed</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://static.wixstatic.com/media/2feeec_309ff0131c4f45719d04228b68e9caba~mv2.jpg/v1/fill/w_409,h_542,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2feeec_309ff0131c4f45719d04228b68e9caba~mv2.jpg"
+                alt="" height="100%" width="100%">
+        </div>
+    </div>
+</section> -->
+
+
+<!-- Section -->
+<section>
+    <div class="box" style="flex-wrap: wrap;">
+        <div class="left">
+            <div class="content">
+                <h1>Our Approach</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+        <div class="right" *ngFor="let data of cardData">
+            <app-card [cardDataDetails]="data"></app-card>
+        </div>
+    </div>
+</section>
+
+<!-- <section>
+    <div class="box" style="flex-wrap: wrap;">
+        <div class="left">
+            <div class="content">
+                <h1>Our Approach</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+        <div class="right" style="background-color: #D43C2B;" *ngFor="let data of cardData">
+            <div class="content">
+                <h1>{{ data.h1 }}</h1>
+                <p>{{ data.p }}</p>
+                <a href="">{{ data.a }}</a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<div class="h1">
+    <h1>Stanford Elementary in Numbers</h1>
+</div>
+
+
+<!-- Cards -->
+<div class="cards">
+    <div class="childCards" *ngFor="let data of card2Data">
+        <app-card-02 [cardDataDetails]="data"></app-card-02>
+    </div>
+</div>

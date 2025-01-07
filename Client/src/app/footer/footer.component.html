@@ -1,0 +1,34 @@
+<footer>
+    <div class="left">
+        <h1>Stanford Elementary</h1>
+        <p>500 Terry Francine Street San <br><br> Francisco, CA 94158 <br><br> infomysite.com
+            <br><br>123-456-7890
+        </p>
+    </div>
+    <div class="mid">
+        <h1>Join the Community</h1>
+        <p>Facebook</p><br>
+        <p>Twitter</p><br>
+        <p>Youtube</p><br>
+        <p>Instagram</p>
+    </div>
+    <div class="right">
+        <form class="contact" (ngSubmit)="onUserSave()" [formGroup]="userForm">
+            <h1>Contact</h1>
+            <div class="form">
+                <label for="">First Name</label>
+                <label for="">Last Name</label><br>
+                <input type="text" formControlName="name" name="name" required>
+                <input type="text" formControlName="surname" name="surname">
+            </div>
+            <label for="">Email</label>
+            <input type="text" formControlName="email" name="email">
+            <label for="">Phone</label>
+            <input type="text" formControlName="phone" name="phone">
+            <label for="">Leave us a message...</label>
+            <textarea name="" id="" cols="30" rows="6" formControlName="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+            <br><br><br>
+        </form>
+    </div>
+</footer>

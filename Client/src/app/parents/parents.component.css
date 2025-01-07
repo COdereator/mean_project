@@ -1,0 +1,14 @@
+main{
+    height: 220vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;  
+    flex-wrap: wrap;
+}
+.left{
+    width: 50%;
+    height: 110vh;
+    display: flex;
+    margin-top: 10px;
+}

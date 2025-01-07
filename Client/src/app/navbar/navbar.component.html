@@ -1,0 +1,11 @@
+<div class="navbar">
+    <a routerLink="/">
+        <div class="logo">
+            <img src="../../assets/logo.jpg" alt="">
+            <h2 align="left">Stanford <br>Elementary</h2>
+        </div>
+    </a>
+    <div class="content">
+        <a routerLink="{{ cont }}" *ngFor="let cont of content;">{{ cont }}</a>
+    </div>
+</div>

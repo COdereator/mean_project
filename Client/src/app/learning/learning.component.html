@@ -1,0 +1,7 @@
+<app-common [common]="common"></app-common>
+
+<main>
+    <div class="cards" *ngFor="let card of cardDetails">
+        <app-learing-card [cardDetails]="card"></app-learing-card>
+    </div>
+</main>

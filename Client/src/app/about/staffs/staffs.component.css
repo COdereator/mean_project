@@ -1,0 +1,21 @@
+.card{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px;
+}
+.subCards{
+    height: 35%;
+    width: 80%;
+    margin-bottom: 20px;
+    color: white;
+}   
+.subCards h1{
+    margin: 20px 20px;
+}
+.subCards p{
+    margin-left: 20px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,75 @@
+.h1{
+    margin: 70px 70px;
+    font-size: 1.3rem;
+}
+section{
+    height: 225vh;
+    width: 90%;
+    margin: auto;
+}
+.box{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+.left{
+    width: 66.66%;
+    height: 100%;
+    background-image: url(https://static.wixstatic.com/media/2feeec_bc7609454e464e9dab664c4575998024~mv2.jpg/v1/fill/w_818,h_542,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2feeec_bc7609454e464e9dab664c4575998024~mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    width: 33.33%;
+    height: 100%;
+}
+.image1{
+    background-image: url(https://static.wixstatic.com/media/2feeec_8d2ef31d73af4fbbbdd908fbfed2863f~mv2.jpg/v1/fill/w_408,h_542,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2feeec_8d2ef31d73af4fbbbdd908fbfed2863f~mv2.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+}
+.content h1{
+   font-size: 2.3rem;
+}
+.content{
+    margin: 50px 50px;
+}
+.content p{
+    margin: 20px 0px;
+    width: 18vw;
+    line-height: 25px;
+}
+.content a{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+.container{
+    height: 130vh;
+    width: 90%;
+    background-color:#E4F9FF;
+    margin: auto;
+}
+.box svg{
+    height: 100px;
+    width: 100px;
+}
+.cards{
+    height: 120.5vh;
+    width: 90%;
+    background-color: #E4F9FF;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.childCards{
+    height: 60vh;
+    width: 33%;
+    border: 1px solid black;
+}
