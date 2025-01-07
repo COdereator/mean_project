@@ -9,9 +9,13 @@ app.use(express.json());
 app.use(cors());
 
 // connection of mongo
-mongoose.connect("mongodb://localhost:27017/mean").then(() => {
-  console.log("Connected to Mongodb");
-});
+mongoose
+  .connect(
+    "mongodb+srv://priyanshuvsk20:codecreator@cluster0.dv6y0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  )
+  .then(() => {
+    console.log("Connected to Mongodb");
+  });
 
 app.get("/", (req, res) => {
   res.send("Hello Nothing");
