@@ -6,11 +6,11 @@
     "mongoose": "^8.5.3"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
-  "name": "server",
+  "name": "index",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
