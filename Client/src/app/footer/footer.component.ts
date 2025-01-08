@@ -33,7 +33,7 @@ export class FooterComponent {
       this.toastr.error('Please fill all the fields', 'Error',{ closeButton : true,timeOut : 1000 });
     }
     else{
-      this._http.post("http://localhost:5000/add",this.userForm.value).subscribe((res:any)=>{  
+      this._http.post("https://backend-auum.onrender.com/add",this.userForm.value).subscribe((res:any)=>{  
         if(res.result){
           this.toastr.success("Data Added","Success",{ closeButton : true,timeOut : 500 })
           this.userForm.reset();
