@@ -3,19 +3,18 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 const { URL } = require("./Models/models");
-const port = 5000;
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const port = process.env.port || 6000;
 
 app.use(express.json());
 app.use(cors());
 
-// connection of mongo
-mongoose
-  .connect(
-    "mongodb+srv://priyanshuvsk20:codecreator@cluster0.dv6y0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
-  .then(() => {
-    console.log("Connected to Mongodb");
-  });
+mongoose.connect(process.env.mongoString).then(() => {
+  console.log("Connected to Mongodb");
+});
 
 app.get("/", (req, res) => {
   res.send("Hello Nothing");
@@ -36,5 +35,5 @@ app.post("/add", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running`);
 });
